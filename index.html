@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mesa Digital</title>
+<title>Casal Cardori</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -563,6 +563,46 @@
   }
   .addon-visual .addon-caption{ color:var(--ink-faint); font-size:0.82rem; }
 
+  /* foto-depois: wrapper com aspect-ratio fixo + placeholder, evita layout shift */
+  .addon-photo.depois .depois-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio:1448 / 1086;
+    background-color:rgba(27,79,114,0.3);
+    overflow:hidden;
+  }
+  .addon-photo.depois .depois-frame img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  /* ---------- ADD-ON: lista de diferenciais (redes sociais) ---------- */
+  .addon-diferenciais{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .addon-diferenciais li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    color:var(--ink-muted);
+    font-size:0.95rem;
+  }
+  .addon-diferenciais li .dif-icon{
+    color:var(--ambar);
+    font-size:1rem;
+    line-height:1.4;
+  }
+  .addon-diferenciais li strong{ color:var(--branco); }
+
   /* ---------- CTA FINAL ---------- */
   .cta-final{
     padding-block:100px;
@@ -664,7 +704,7 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-brand">Mesa<span>Digital</span></div>
+    <div class="nav-brand">Casal<span>Cardori</span></div>
     <ul class="nav-links">
       <li><a href="#solução-1">Mesa Posta</a></li>
       <li><a href="#solução-2">Casa Cheia</a></li>
@@ -889,10 +929,59 @@
           <figcaption>Antes</figcaption>
         </figure>
         <figure class="addon-photo depois">
-          <img src="foto-depois.png" alt="Foto do prato depois do tratamento profissional" loading="lazy">
+          <div class="depois-frame">
+            <img src="foto-depois.png" alt="Foto do prato depois do tratamento profissional" loading="lazy" width="1448" height="1086">
+          </div>
           <figcaption>Depois</figcaption>
         </figure>
       </div>
+      <p class="addon-caption">Serviço contratado à parte, sob orçamento. Disponível como complemento para qualquer solução.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADD-ON 2 — POSICIONAMENTO EM MÍDIAS DIGITAIS ================= -->
+<section class="addon" id="addon-posicionamento">
+  <div class="addon-inner">
+    <div class="reveal" data-hidden>
+      <span class="eyebrow">Add-on · disponível para qualquer solução</span>
+      <h2>Seu negócio publicando todo dia — sem você abrir o celular pra isso.</h2>
+      <p class="addon-desc">Consistência é o que separa quem é lembrado de quem é esquecido. Enquanto você foca no que sabe fazer, a gente garante que seu negócio aparece, comunica e conquista — todo dia, no lugar certo, para as pessoas certas.</p>
+      <span class="addon-tag">✦ Posicionamento em Mídias Digitais</span>
+    </div>
+    <div class="addon-visual reveal" data-hidden>
+      <span class="addon-badge">ADD-ON · SERVIÇO À PARTE</span>
+      <ul class="addon-diferenciais">
+        <li><span class="dif-icon">◆</span><span><strong>Calendário editorial estratégico</strong> — conteúdo planejado com intenção, não no improviso</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Posicionamento de marca</strong> — cada publicação constrói autoridade e reconhecimento no seu nicho</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Copy que converte</strong> — textos escritos para gerar desejo, conexão e ação real</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Estratégia de engajamento</strong> — orientação de como interagir com sua audiência para transformar seguidor em cliente</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Identidade visual aplicada</strong> — consistência que faz seu perfil parecer grande, mesmo começando pequeno</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Inteligência de dados</strong> — relatório mensal que mostra o que funciona e orienta o próximo passo</span></li>
+      </ul>
+      <p class="addon-caption">Serviço contratado à parte, sob orçamento. Disponível como complemento para qualquer solução.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADD-ON 3 — ESTRATÉGIA DE CONTEÚDO DE PERFORMANCE ================= -->
+<section class="addon" id="addon-conteudo">
+  <div class="addon-inner">
+    <div class="reveal" data-hidden>
+      <span class="eyebrow">Add-on · disponível para qualquer solução</span>
+      <h2>Crescimento orgânico. Sem impulsionar. Sem depender de anúncio.</h2>
+      <p class="addon-desc">Existe um método por trás dos perfis que crescem rápido e vendem sem gastar com tráfego pago. A gente aplica esse método no seu negócio: estratégia de conteúdo viral, roteiro, edição e cadência — tudo pensado para parar o scroll, gerar compartilhamento e transformar visualização em cliente. Você aparece na câmera. O resto é com a gente.</p>
+      <span class="addon-tag">✦ Estratégia de Conteúdo de Performance</span>
+    </div>
+    <div class="addon-visual reveal" data-hidden>
+      <span class="addon-badge">ADD-ON · SERVIÇO À PARTE</span>
+      <ul class="addon-diferenciais">
+        <li><span class="dif-icon">◆</span><span>Estratégia de crescimento orgânico personalizada para o seu perfil</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Roteiro de conteúdo viral</strong> — o que falar, como falar, qual formato performa mais</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Edição profissional</strong> — cortes dinâmicos, legenda animada, identidade de série</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Cadência de publicação estratégica</strong> — frequência e horário que o algoritmo favorece</span></li>
+        <li><span class="dif-icon">◆</span><span><strong>Sem captação inclusa</strong> — você grava, a gente transforma em conteúdo que cresce</span></li>
+      </ul>
       <p class="addon-caption">Serviço contratado à parte, sob orçamento. Disponível como complemento para qualquer solução.</p>
     </div>
   </div>
@@ -909,7 +998,7 @@
 </section>
 
 <footer>
-  <div class="container">Mesa Digital · Catálogos digitais para o setor de alimentação</div>
+  <div class="container">© 2026 Casal Cardori · cardoritech.com · Todos os direitos reservados.</div>
 </footer>
 
 <!-- ================= MODAL ================= -->
